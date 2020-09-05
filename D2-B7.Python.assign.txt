@@ -1,0 +1,133 @@
+lst=["Suganthy",20,40.6,[1,2,3],"hi"]
+lst
+['Suganthy', 20, 40.6, [1, 2, 3], 'hi']
+
+List Append
+lst.append("Pondy")
+lst
+['Suganthy', 20, 40.6, [1, 2, 3], 'hi', 'Pondy']
+
+Index
+lst.index(20)
+1
+['Suganthy', 20, 40.6, [1, 2, 3], 'hi', 'Pondy']
+
+lst=["Suganthy",20,40.6,[1,2,3],"hi"]['Suganthy', 20, 40.6, [1, 2, 3], 'hi', 'Pondy']
+?
+lst
+['Suganthy', 20, 40.6, [1, 2, 3], 'hi']
+
+Insert
+lst.insert(25,"Raman")
+lst
+['Suganthy', 20, 40.6, [1, 2, 3], 'hi', 'Raman']
+
+Remove
+lst.remove(20)
+lst
+['Suganthy', 40.6, [1, 2, 3], 'hi', 'Raman']
+
+Reverse
+lst.reverse()
+lst
+['Raman', 'hi', [1, 2, 3], 40.6, 'Suganthy']
+
+
+Dictionaries
+dit={"Name":"Suganthy","age":"20","Number":"12345"}
+dit
+{'Name': 'Suganthy', 'age': '20', 'Number': '12345'}
+
+Get
+dit.get('Name')
+'Suganthy'
+Keys
+dit.keys()
+dict_keys(['Name', 'age', 'Number'])
+
+Update
+dit.update({"Place":"Pondy"})
+dit
+{'Name': 'Suganthy', 'age': '20', 'Number': '12345', 'Place': 'Pondy'}
+
+Items
+dit.items()
+dict_items([('Name', 'Suganthy'), ('age', '20'), ('Number', '12345'), ('Place', 'Pondy')])
+
+Pop
+dit.pop("Name")
+'Suganthy'
+
+
+SETS
+st={"Suganthy","Pondy",1,2,3,3,3,4,4,5,6,6,6,7}
+st
+{1, 2, 3, 4, 5, 6, 7, 'Pondy', 'Suganthy'}
+st1={"Raman",1,3,4,4,4,8,9}
+st1
+{1, 3, 4, 8, 9, 'Raman'}
+
+Intersection
+st1.intersection(st)
+{1, 3, 4}
+Difference
+st1.difference(st)
+{8, 9, 'Raman'}
+
+Issubset
+st1.issubset(st)
+False
+
+Isdisjoint
+st1.isdisjoint(st)
+False
+
+Update
+st1.update(st)
+st1
+{1, 2, 3, 4, 5, 6, 7, 8, 9, 'Pondy', 'Raman', 'Suganthy'}
+
+
+Tuples
+tup=("Suganthy","Pondy",1243)
+tup
+('Suganthy', 'Pondy', 1243)
+
+Count
+tup.count("1243")
+0
+
+Index
+tup.index("Pondy")
+1
+
+
+STRING
+a="Hi"
+print(a)
+Hi
+
+b="welcome"
+print(b)
+welcome
+
+c=a+b
+print(c)
+Hiwelcome
+
+d="How are you?"
+d
+print(d)
+How are you?
+20
+d.center(20)
+'    How are you?    '
+d.upper()
+'HOW ARE YOU?'
+d.encode()
+b'How are you?'
+.
+d.endswith(".")
+False
+d.format()
+'How are you?'
